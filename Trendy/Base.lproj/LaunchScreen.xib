@@ -1,28 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6214" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6207"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 NewAgeSMB. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
+                    <rect key="frame" x="20" y="559" width="561" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trendy" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="140" width="441" height="43"/>
+                    <rect key="frame" x="20" y="180" width="561" height="43"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="f2D-Tg-b7H">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-Nu-GLp">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="103" id="IRu-Nl-1MF"/>
+                        <constraint firstAttribute="height" constant="125" id="Obo-OX-4zU"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="IRu-Nl-1MF"/>
+                            <exclude reference="Obo-OX-4zU"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <include reference="IRu-Nl-1MF"/>
+                            <include reference="Obo-OX-4zU"/>
+                        </mask>
+                    </variation>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -30,12 +53,50 @@
                 <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
+                <constraint firstAttribute="bottom" secondItem="f2D-Tg-b7H" secondAttribute="bottom" id="OL8-Qd-QVp"/>
+                <constraint firstItem="f2D-Tg-b7H" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XaR-Zb-Hd9"/>
+                <constraint firstItem="f2D-Tg-b7H" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ygr-NW-DzA"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstAttribute="trailing" secondItem="f2D-Tg-b7H" secondAttribute="trailing" id="gFd-9R-di9"/>
+                <constraint firstItem="f2D-Tg-b7H" firstAttribute="centerY" secondItem="0qd-Nu-GLp" secondAttribute="centerY" constant="0.5" id="mQL-RF-nAf">
+                    <variation key="heightClass=regular" constant="0.5"/>
+                </constraint>
+                <constraint firstItem="f2D-Tg-b7H" firstAttribute="centerX" secondItem="0qd-Nu-GLp" secondAttribute="centerX" constant="-0.5" id="u6J-dY-5Af"/>
             </constraints>
-            <nil key="simulatedStatusBarMetrics"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="548" y="455"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="f2D-Tg-b7H"/>
+                    <exclude reference="0qd-Nu-GLp"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="OL8-Qd-QVp"/>
+                    <exclude reference="XaR-Zb-Hd9"/>
+                    <exclude reference="Ygr-NW-DzA"/>
+                    <exclude reference="gFd-9R-di9"/>
+                    <exclude reference="mQL-RF-nAf"/>
+                    <exclude reference="u6J-dY-5Af"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular">
+                <mask key="subviews">
+                    <include reference="f2D-Tg-b7H"/>
+                    <include reference="0qd-Nu-GLp"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="OL8-Qd-QVp"/>
+                    <include reference="XaR-Zb-Hd9"/>
+                    <include reference="Ygr-NW-DzA"/>
+                    <include reference="gFd-9R-di9"/>
+                    <include reference="mQL-RF-nAf"/>
+                    <include reference="u6J-dY-5Af"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="341" y="462"/>
         </view>
     </objects>
+    <resources>
+        <image name="logo.png" width="103" height="125"/>
+        <image name="splash.png" width="600" height="800"/>
+    </resources>
 </document>

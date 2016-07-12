@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ServerRequest.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<delegaterequest>{
+    
+    AppDelegate *appdelegate;
+    NSString *requesttype;
+    NSDictionary *fbprofiledict;
+}
 
 @end
 
