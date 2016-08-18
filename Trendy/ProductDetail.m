@@ -194,19 +194,28 @@ static NSString *const menuCellIdentifier = @"rotationCell";
            // [imagecollections reloadData];
             if([[productdetail objectForKey:@"user_id"] integerValue]  == [appdelegate.userid integerValue]){
                 reportbtn.selected = YES;
+                reportbtn.hidden = NO;
+                contextbtn.hidden = YES;
+                
+                [reportbtn setTag:-1];
+                [reportbtn addTarget:self action:@selector(report:) forControlEvents:UIControlEventTouchUpInside];
+                
 //                containerView.hidden = YES;
                 
             }
             else{
                 
                 reportbtn.selected = NO;
+                reportbtn.hidden = YES;
+                contextbtn.hidden = NO;
+                
                 containerView.hidden = NO;
             }
             [self setframes];
             [suggestedtable reloadData];
             [reviewtable reloadData];
         }
-        else if([requesttype isEqualToString:@"addreviews"] || [requesttype isEqualToString:@"save"] || [requesttype isEqualToString:@"vote"] || [requesttype isEqualToString:@"review_rating"] || [requesttype isEqualToString:@"addtooccasion"] || [requesttype isEqualToString:@"occasions"] || [requesttype isEqualToString:@"trendy_report"] || [requesttype isEqualToString:@"deletepost"] || [requesttype isEqualToString:@"review_delete"]){
+        else if([requesttype isEqualToString:@"addreviews"] || [requesttype isEqualToString:@"save"] || [requesttype isEqualToString:@"vote"] || [requesttype isEqualToString:@"review_rating"] || [requesttype isEqualToString:@"addtooccasion"] || [requesttype isEqualToString:@"occasions"] || [requesttype isEqualToString:@"trendy_report"] || [requesttype isEqualToString:@"deletepost"] || [requesttype isEqualToString:@"review_delete"] || [requesttype isEqualToString:@"trendy_repost"]){
 
             if([[tempdict objectForKey:@"status"] isEqualToString:@"true"]){
                 
@@ -235,6 +244,19 @@ static NSString *const menuCellIdentifier = @"rotationCell";
                         isreportview = NO;
                     }
                     
+                }
+                else if ([requesttype isEqualToString:@"trendy_repost"])
+                {
+                    if ([[tempdict valueForKey:@"status"]boolValue])
+                    {
+                        [[NSNotificationCenter defaultCenter] postNotificationName:@"REFRESH" object:nil];
+                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Item Successfully Reposted!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                        [alert show];
+                    }
+                     else
+                     {
+                         
+                     }
                 }
 
                 else if([requesttype isEqualToString:@"vote"]){
@@ -911,7 +933,7 @@ static NSString *const menuCellIdentifier = @"rotationCell";
     self.menuTitles = @[@"Repost",
                         @"Report"];
     
-    self.menuIcons = [[NSArray alloc] initWithObjects:@"context_posted_item",@"context_rev_items",nil];
+    self.menuIcons = [[NSArray alloc] initWithObjects:@"context_posted_item",@"alert",nil];
 }
 
 
@@ -1064,7 +1086,7 @@ static NSString *const menuCellIdentifier = @"rotationCell";
         ContextMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:menuCellIdentifier forIndexPath:indexPath];
         
         if (cell) {
-            cell.backgroundColor = [UIColor greenColor];
+         //   cell.backgroundColor = [UIColor greenColor];
             cell.menuTitleLabel.text = [self.menuTitles objectAtIndex:indexPath.row];
             cell.menuImageView.image = [UIImage imageNamed:[self.menuIcons objectAtIndex:indexPath.row]];
         }
@@ -1088,11 +1110,12 @@ static NSString *const menuCellIdentifier = @"rotationCell";
         [tableView dismisWithIndexPath:indexPath];
         contextbtn.selected = NO;
         if(indexPath.row == 0){
-            
+            [self repost];
         }
         else if(indexPath.row == 1){
-            
-            [self report:nil];
+            UIButton *btn = [[UIButton alloc]init];
+            btn.tag = -1;
+            [self report:btn];
         }
         
     }
@@ -1592,6 +1615,22 @@ static NSString *const menuCellIdentifier = @"rotationCell";
     }
     
     
+}
+
+-(void)repost
+{
+    ServerRequest *obj = [[ServerRequest alloc] init];
+    obj.delegate = self;
+    
+    float lat, lng;
+    lat = appdelegate.locationManager.location.coordinate.latitude;
+    lng = appdelegate.locationManager.location.coordinate.longitude;
+    
+    NSString *   postdata = [[NSString alloc] initWithFormat:@"{\"function\":\"repost_trendy\",\"parameters\": {\"v\": \"%@\",\"apv\": \"%@\",\"authKey\": \"%@\",\"sessionKey\": \"%@\",\"feed_id\": \"%@\",\"user_id\": \"%@\",\"lat\": \"%f\",\"long\": \"%f\"},\"token\":\"\"}",appdelegate.apiversion,appdelegate.appversion,appdelegate.authkey,appdelegate.sessionid,productid,appdelegate.userid,lat,lng];    NSLog(@"%@",postdata);
+    [obj serverrequest:postdata];
+    [self startLoader:@"Loading..."];
+    requesttype = @"trendy_repost";
+
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{

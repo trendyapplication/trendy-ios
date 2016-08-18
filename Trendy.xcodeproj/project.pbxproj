@@ -44,7 +44,6 @@
 		586C87EB1BA09F1300A9455A /* ReviewList.m in Sources */ = {isa = PBXBuildFile; fileRef = 586C87E91BA09F1300A9455A /* ReviewList.m */; };
 		586C87EC1BA09F1300A9455A /* ReviewList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586C87EA1BA09F1300A9455A /* ReviewList.xib */; };
 		586F7AF91B70CF5D005C3242 /* img@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 586F7AF81B70CF5D005C3242 /* img@2x.png */; };
-		586F7AFD1B70F8B3005C3242 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586F7AFB1B70F8B3005C3242 /* FBSDKCoreKit.framework */; };
 		586F7AFE1B70F8B3005C3242 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586F7AFC1B70F8B3005C3242 /* FBSDKLoginKit.framework */; };
 		5871EC461BCCDE430056191A /* NotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5871EC441BCCDE430056191A /* NotificationCell.m */; };
 		5871EC471BCCDE430056191A /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5871EC451BCCDE430056191A /* NotificationCell.xib */; };
@@ -313,6 +312,11 @@
 		58F528EC1BF62E0200018160 /* popnum@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F528E91BF62E0100018160 /* popnum@2x.png */; };
 		58F528ED1BF62E0200018160 /* poppost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F528EA1BF62E0100018160 /* poppost@2x.png */; };
 		58F528EF1BF62E6600018160 /* popbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F528EE1BF62E6600018160 /* popbg@2x.png */; };
+		9713C9741D522221006D5010 /* alert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9713C9731D522221006D5010 /* alert@2x.png */; };
+		974013CD1D3FBD4B0019E2E8 /* repost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 974013CC1D3FBD4B0019E2E8 /* repost@2x.png */; };
+		97614B7C1D3CFD450085C6C6 /* dots@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97614B7B1D3CFD450085C6C6 /* dots@2x.png */; };
+		9766CB981D3690B6006B7B74 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9766CB971D3690B6006B7B74 /* FBSDKCoreKit.framework */; };
+		97E253BF1D4B9B230077868D /* edit_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E253BE1D4B9B230077868D /* edit_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -378,7 +382,6 @@
 		586C87E91BA09F1300A9455A /* ReviewList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewList.m; sourceTree = "<group>"; };
 		586C87EA1BA09F1300A9455A /* ReviewList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewList.xib; sourceTree = "<group>"; };
 		586F7AF81B70CF5D005C3242 /* img@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img@2x.png"; sourceTree = "<group>"; };
-		586F7AFB1B70F8B3005C3242 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		586F7AFC1B70F8B3005C3242 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		5871EC431BCCDE430056191A /* NotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCell.h; sourceTree = "<group>"; };
 		5871EC441BCCDE430056191A /* NotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationCell.m; sourceTree = "<group>"; };
@@ -740,6 +743,11 @@
 		58F528E91BF62E0100018160 /* popnum@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popnum@2x.png"; sourceTree = "<group>"; };
 		58F528EA1BF62E0100018160 /* poppost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poppost@2x.png"; sourceTree = "<group>"; };
 		58F528EE1BF62E6600018160 /* popbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popbg@2x.png"; sourceTree = "<group>"; };
+		9713C9731D522221006D5010 /* alert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert@2x.png"; sourceTree = "<group>"; };
+		974013CC1D3FBD4B0019E2E8 /* repost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repost@2x.png"; sourceTree = "<group>"; };
+		97614B7B1D3CFD450085C6C6 /* dots@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dots@2x.png"; sourceTree = "<group>"; };
+		9766CB971D3690B6006B7B74 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		97E253BE1D4B9B230077868D /* edit_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit_icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -748,8 +756,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5899105E1BD52C7A00EBE557 /* WebP.framework in Frameworks */,
+				9766CB981D3690B6006B7B74 /* FBSDKCoreKit.framework in Frameworks */,
 				586F7AFE1B70F8B3005C3242 /* FBSDKLoginKit.framework in Frameworks */,
-				586F7AFD1B70F8B3005C3242 /* FBSDKCoreKit.framework in Frameworks */,
 				5871EC491BCD138C0056191A /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -816,8 +824,8 @@
 		586F7AFA1B70F8B3005C3242 /* FBFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9766CB971D3690B6006B7B74 /* FBSDKCoreKit.framework */,
 				5871EC481BCD138C0056191A /* FBSDKShareKit.framework */,
-				586F7AFB1B70F8B3005C3242 /* FBSDKCoreKit.framework */,
 				586F7AFC1B70F8B3005C3242 /* FBSDKLoginKit.framework */,
 			);
 			name = FBFrameworks;
@@ -1272,6 +1280,7 @@
 		58C042D01B6F863800BE27F9 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				97614B7B1D3CFD450085C6C6 /* dots@2x.png */,
 				584156461BD644B7005A71E1 /* bgpop@2x.png */,
 				587B86ED1BCE7B45006B51D7 /* recent_blok@2x.png */,
 				587B86EE1BCE7B45006B51D7 /* productdelete@2x.png */,
@@ -1288,6 +1297,7 @@
 				58C042D41B6F863800BE27F9 /* headdr_tab@2x.png */,
 				58C042D51B6F863800BE27F9 /* icon1@2x.png */,
 				58C042D61B6F863800BE27F9 /* icon2@2x.png */,
+				974013CC1D3FBD4B0019E2E8 /* repost@2x.png */,
 				58C042D71B6F863800BE27F9 /* location@2x.png */,
 				58C042D81B6F863800BE27F9 /* report@2x.png */,
 				58C042D91B6F863800BE27F9 /* send@2x.png */,
@@ -1431,6 +1441,7 @@
 		58C043241B6F863800BE27F9 /* recent */ = {
 			isa = PBXGroup;
 			children = (
+				97E253BE1D4B9B230077868D /* edit_icon@2x.png */,
 				58D1B8991B9F2C51008E3E5A /* recentdefaultimage@2x.png */,
 			);
 			path = recent;
@@ -1439,6 +1450,7 @@
 		58C043261B6F863800BE27F9 /* report */ = {
 			isa = PBXGroup;
 			children = (
+				9713C9731D522221006D5010 /* alert@2x.png */,
 				58C043271B6F863800BE27F9 /* report_bg@2x.png */,
 				58C043281B6F863800BE27F9 /* form@2x.png */,
 				58C043291B6F863800BE27F9 /* radio@2x.png */,
@@ -1691,6 +1703,7 @@
 				58C0438E1B6F863800BE27F9 /* rev_items_hover@2x.png in Resources */,
 				58C043831B6F863800BE27F9 /* Swimwear@2x.png in Resources */,
 				58AA736C1BB13B1E0094FAD1 /* btn@2x.png in Resources */,
+				974013CD1D3FBD4B0019E2E8 /* repost@2x.png in Resources */,
 				58C043801B6F863800BE27F9 /* holiday@2x.png in Resources */,
 				58C043891B6F863800BE27F9 /* posted_item@2x.png in Resources */,
 				58C043A71B6F863800BE27F9 /* blok@2x.png in Resources */,
@@ -1704,6 +1717,7 @@
 				58C043A51B6F863800BE27F9 /* plus@2x.png in Resources */,
 				584156471BD644B7005A71E1 /* bgpop@2x.png in Resources */,
 				58C043551B6F863800BE27F9 /* tab3@2x.png in Resources */,
+				97E253BF1D4B9B230077868D /* edit_icon@2x.png in Resources */,
 				58C0435F1B6F863800BE27F9 /* gender@2x.png in Resources */,
 				589372D71BABFB8B0000852D /* ContextMenuCell.xib in Resources */,
 				58AC7B981BC7BF99000A1025 /* mns@2x.png in Resources */,
@@ -1751,6 +1765,7 @@
 				58C042B71B6F7A2B00BE27F9 /* LaunchScreen.xib in Resources */,
 				58C043571B6F863800BE27F9 /* tab4@2x.png in Resources */,
 				58AC7B961BC7BF99000A1025 /* buy_btn@2x.png in Resources */,
+				9713C9741D522221006D5010 /* alert@2x.png in Resources */,
 				58C043AB1B6F863800BE27F9 /* price_bar@2x.png in Resources */,
 				58AA73701BB1405C0094FAD1 /* satr1@2x.png in Resources */,
 				58C043921B6F863800BE27F9 /* tracking@2x.png in Resources */,
@@ -1760,6 +1775,7 @@
 				58C0438F1B6F863800BE27F9 /* saved_item@2x.png in Resources */,
 				58C043991B6F863800BE27F9 /* search_bar@2x.png in Resources */,
 				58AC7B951BC7BF99000A1025 /* btn2@2x.png in Resources */,
+				97614B7C1D3CFD450085C6C6 /* dots@2x.png in Resources */,
 				58C0435E1B6F863800BE27F9 /* gender1@2x.png in Resources */,
 				583C41351BB9289600A0AAAB /* FilterView.xib in Resources */,
 				5871EC471BCCDE430056191A /* NotificationCell.xib in Resources */,
@@ -2033,7 +2049,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "8b018479-7cf0-4d14-ac13-183ab258dcf9";
+				PROVISIONING_PROFILE = "a75f17fe-bc02-41b7-a76a-7e5f97f97e88";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2071,7 +2087,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "184fd0f8-83e3-4983-a576-8b3ab2c4891e";
+				PROVISIONING_PROFILE = "4c7e206d-3635-4e76-80bc-0ed3da75c481";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2093,7 +2109,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8b018479-7cf0-4d14-ac13-183ab258dcf9";
+				PROVISIONING_PROFILE = "a75f17fe-bc02-41b7-a76a-7e5f97f97e88";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2114,7 +2130,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "184fd0f8-83e3-4983-a576-8b3ab2c4891e";
+				PROVISIONING_PROFILE = "4c7e206d-3635-4e76-80bc-0ed3da75c481";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

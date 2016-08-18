@@ -74,8 +74,10 @@
     
     [self startUpdatingCurrentLocation];
   //self.Clienturl = @"http://192.168.1.254/trendyservice/client";
-   // self.Clienturl = @"http://newagesme.com/trendyservice/client";
-  self.Clienturl = @"http://54.68.77.215/client";
+    //self.Clienturl = @"http://newagesme.com/trendyservice/client";
+    //self.Clienturl = @"http://newagesme.com/trendyservice-live/client";
+  //self.Clienturl = @"http://54.68.77.215/client";
+    self.Clienturl = @"http://trendyapplication.com/client";
     
     NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
     

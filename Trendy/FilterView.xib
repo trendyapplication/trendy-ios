@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -530,10 +530,10 @@
                     </connections>
                 </scrollView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WPE-rf-ICd">
-                    <rect key="frame" x="0.0" y="20" width="45" height="45"/>
+                    <rect key="frame" x="0.0" y="25" width="45" height="39"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
-                    <state key="normal" image="icon1.png">
+                    <state key="normal" image="edit_icon.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="selected" image="back.png"/>
@@ -563,10 +563,10 @@
         <image name="checkbox.png" width="16" height="15"/>
         <image name="checked.png" width="16" height="15"/>
         <image name="colabse.png" width="11" height="1"/>
+        <image name="edit_icon.png" width="21" height="21"/>
         <image name="filter_bg.png" width="202" height="493"/>
         <image name="filterbox.png" width="47" height="26"/>
         <image name="filterplus.png" width="11" height="11"/>
-        <image name="icon1.png" width="20" height="21"/>
         <image name="icon2.png" width="20" height="21"/>
         <image name="tab.png" width="199" height="32"/>
     </resources>

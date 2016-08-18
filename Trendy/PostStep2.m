@@ -74,6 +74,7 @@
     imagedataarray = [[NSMutableArray alloc] init];
     scroll.contentSize = CGSizeMake([[UIScreen mainScreen] bounds].size.width, postbtn.frame.origin.y + postbtn.frame.size.height + 50);
     genderval = @"";
+    brandID = @"";
     UINib *cellNib = [UINib nibWithNibName:@"GalleryCell" bundle:nil];
     [itemImageCollectionview registerNib:cellNib forCellWithReuseIdentifier:@"GalleryCell"];
     [self getoccations];

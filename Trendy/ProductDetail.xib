@@ -32,6 +32,7 @@
                 <outlet property="productownername" destination="u69-iD-V2p" id="28X-06-ghu"/>
                 <outlet property="productprice" destination="sO3-W1-A5M" id="n3w-1N-5ul"/>
                 <outlet property="reloadbtn" destination="Gch-xM-xha" id="P8Y-cX-kkf"/>
+                <outlet property="reportbtn" destination="uxH-A0-xa4" id="2M0-4A-1ZV"/>
                 <outlet property="reportdescription" destination="msa-ie-Ely" id="fdV-hj-1WL"/>
                 <outlet property="reportscroll" destination="cFW-oR-4P6" id="w99-8U-3eG"/>
                 <outlet property="reporttable" destination="AE2-qW-htc" id="PrP-6w-L4F"/>
@@ -82,13 +83,21 @@
                     <rect key="frame" x="275" y="25" width="45" height="45"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                     <animations/>
-                    <state key="normal" image="report.png">
+                    <state key="normal" image="dots.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="selected" image="productdelete.png"/>
                     <connections>
                         <action selector="openMenu:" destination="-1" eventType="touchUpInside" id="Ejt-vN-yjG"/>
                     </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uxH-A0-xa4">
+                    <rect key="frame" x="275" y="25" width="45" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <state key="normal" image="productdelete.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                 </button>
                 <view hidden="YES" contentMode="scaleToFill" id="7wq-Fb-cIK">
                     <rect key="frame" x="80" y="142" width="160" height="284"/>
@@ -697,6 +706,7 @@
         <image name="buy_btn.png" width="187" height="38"/>
         <image name="comment.png" width="299" height="42"/>
         <image name="detailbox.png" width="302" height="57"/>
+        <image name="dots.png" width="27" height="8"/>
         <image name="drop.png" width="12" height="9"/>
         <image name="dull.png" width="124" height="29"/>
         <image name="form.png" width="268" height="86"/>
@@ -705,7 +715,6 @@
         <image name="mns.png" width="26" height="26"/>
         <image name="pls.png" width="26" height="26"/>
         <image name="productdelete.png" width="23" height="23"/>
-        <image name="report.png" width="22" height="20"/>
         <image name="report_bg.png" width="303" height="381"/>
         <image name="send.png" width="19" height="18"/>
         <image name="submit.png" width="268" height="40"/>
